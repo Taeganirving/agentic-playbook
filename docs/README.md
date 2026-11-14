@@ -45,13 +45,13 @@ Tier 1 includes the **contract-critical docs** (`contracts.md`, `api.md`, `data-
 
 | File | Owner (lead author) | Purpose |
 |------|---------------------|---------|
-| `architecture.md` | Architect | System overview, services, data flow, trust boundaries on `[insert cloud provider here]`. |
+| `architecture.md` | Architect | System overview, services, data flow, trust boundaries on None, local-first (runs on localhost plus a Docker sandbox). |
 | `contracts.md` ⭐ | Backend + Data Engineer + Architect | **The exhaustive, code-grounded inventory** of every route/endpoint, request/response contract, event/message schema, public interface/signature, third-party integration, environment variable, feature flag, cron/queue, and cross-cutting invariant. The single most important doc for safe autonomous commits. Must be complete (§ 6.0(3)), not a sample. May point to reproducible machine-readable sources (OpenAPI / schema dumps) as long as the pointers are exact. |
 | `api.md` | Backend | API surface narrative: protocol, conventions, auth model, versioning/deprecation, and **how to add or change a route safely** (the rules behind the `contracts.md` list). |
-| `data-model.md` | Data Engineer | Schema overview, **every** key table/collection with columns, indexes, PII classification, migration approach for `[insert database here]`, and **how to change the schema safely** (reversibility, deploy sequencing, backfill). |
+| `data-model.md` | Data Engineer | Schema overview, **every** key table/collection with columns, indexes, PII classification, migration approach for None, JSON-file persistence, and **how to change the schema safely** (reversibility, deploy sequencing, backfill). |
 | `stack.md` | Architect | Languages, frameworks, services in use, and *why* each was chosen. |
 | `testing.md` | Test Engineer | Test strategy, levels, coverage gates, test-data approach, and the **regression-safety check** an agent runs to prove a change didn't break a documented contract. |
-| `deployment.md` | DevOps | Environments, Continuous Integration / Continuous Delivery pipeline on `[insert Continuous Integration provider here]`, promotion path, rollback. |
+| `deployment.md` | DevOps | Environments, Continuous Integration / Continuous Delivery pipeline on GitHub Actions, promotion path, rollback. |
 | `ownership.md` | Architect + Analyst | Directly Responsible Individual map for multi-engineer teams — who owns what, who tiebreaks, on-call rotation pointer. Mirrors `.github/CODEOWNERS`. |
 | `onboarding.md` | Analyst | First-day path for new engineers: read order, development setup, communication channels, first-pull-request expectations. |
 | `decisions/` (skeleton + Architectural Decision Record 0001) | Architect | One Architectural Decision Record per significant decision; never edit a past Architectural Decision Record, supersede it. |

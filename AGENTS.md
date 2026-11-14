@@ -135,7 +135,7 @@ Unresolvable conflicts are surfaced to the human Directly Responsible Individual
 
 ## 4. The 7 Strategic Lenses
 
-Every **major** decision — architecture, feature scope, pricing, tooling, or anything else that shapes the direction of `[insert product name here]` — must be evaluated through all 7 lenses **before** implementation. Each lens is a stand-in for a stakeholder whose perspective is easy to miss when an engineer or AI agent is heads-down on the work.
+Every **major** decision — architecture, feature scope, pricing, tooling, or anything else that shapes the direction of Verification Engine (AI-powered legacy system modernizer) — must be evaluated through all 7 lenses **before** implementation. Each lens is a stand-in for a stakeholder whose perspective is easy to miss when an engineer or AI agent is heads-down on the work.
 
 1. **CEO Lens** — Does this fit the strategy? What's the story to the board / leadership / public if it succeeds? If it fails? Any internal political risk in choosing this path?
 2. **Purchasing Lens** — Cost vs. value? Security and compliance posture? Vendor lock-in and third-party risk? Would the procurement / legal team approve the dependencies?
@@ -490,22 +490,22 @@ This starter is intentionally stack-neutral. Replace the bracketed placeholders 
 
 | Placeholder | Replace with |
 |-------------|--------------|
-| `[insert cloud provider here]` | AWS / GCP / Azure / Vercel / Cloudflare / etc. |
-| `[insert frontend framework here]` | Next.js / Remix / SvelteKit / Vue / plain React / etc. |
-| `[insert backend framework here]` | Node + Express / FastAPI / Go + chi / Rails / .NET / etc. |
-| `[insert database here]` | Postgres / MySQL / SQLite / DynamoDB / Mongo / etc. |
-| `[insert authentication provider here]` | Clerk / Auth0 / Cognito / NextAuth / custom / etc. |
-| `[insert Continuous Integration provider here]` | **GitHub Actions** (default) or **Azure DevOps Pipelines** — both shipped, see § 7 "CI provider" / GitLab Pipelines / CircleCI / etc. |
-| `[insert hosting platform here]` | Vercel / Fly.io / Render / AWS ECS / k8s / etc. |
-| `[insert monitoring here]` | Datadog / Sentry / Grafana / New Relic / etc. |
-| `[insert test runner here]` | Vitest / Jest / Pytest / Go test / RSpec / etc. |
-| `[insert end-to-end tool here]` | Playwright / Cypress / Selenium / etc. |
-| `[insert package manager here]` | pnpm / npm / yarn / pip / poetry / cargo / etc. |
-| `[insert language here]` | TypeScript / Python / Go / Rust / etc. |
-| `[insert team name here]` | Your team or org name |
-| `[insert product name here]` | The product/project this repo builds |
-| `[insert primary user persona here]` | Who this product is for |
-| `[insert secret manager here]` | AWS Secrets Manager / GCP Secret Manager / Vault / Doppler / 1Password / etc. |
+| None, local-first (runs on localhost plus a Docker sandbox) | AWS / GCP / Azure / Vercel / Cloudflare / etc. |
+| Single-page HTML and JS served by FastAPI, no build step | Next.js / Remix / SvelteKit / Vue / plain React / etc. |
+| FastAPI | Node + Express / FastAPI / Go + chi / Rails / .NET / etc. |
+| None, JSON-file persistence | Postgres / MySQL / SQLite / DynamoDB / Mongo / etc. |
+| None, local-only app, no auth | Clerk / Auth0 / Cognito / NextAuth / custom / etc. |
+| GitHub Actions | **GitHub Actions** (default) or **Azure DevOps Pipelines** — both shipped, see § 7 "CI provider" / GitLab Pipelines / CircleCI / etc. |
+| None, runs locally for the demo | Vercel / Fly.io / Render / AWS ECS / k8s / etc. |
+| None, local run logs | Datadog / Sentry / Grafana / New Relic / etc. |
+| Pytest | Vitest / Jest / Pytest / Go test / RSpec / etc. |
+| Playwright | Playwright / Cypress / Selenium / etc. |
+| pip | pnpm / npm / yarn / pip / poetry / cargo / etc. |
+| Python 3.12+ | TypeScript / Python / Go / Rust / etc. |
+| iHack 2026 team (Taegan Irving and Eli Kearl) | Your team or org name |
+| Verification Engine (AI-powered legacy system modernizer) | The product/project this repo builds |
+| Developers modernizing legacy applications | Who this product is for |
+| Environment variables and a gitignored .env file | AWS Secrets Manager / GCP Secret Manager / Vault / Doppler / 1Password / etc. |
 | `[insert repo-N dir]` / `[insert role …]` / `[insert git URL]` *(workspace model)* | The repos that make up the project — fill in `workspace.manifest.md` and `docs/integration-map.md`. |
 
 Agents should **flag** any unreplaced `[insert …]` they encounter during review.

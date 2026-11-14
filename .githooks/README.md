@@ -48,4 +48,4 @@ On macOS, download the matching `darwin` file from the same release page and ver
 
 ## Customizing for your stack
 
-These hooks are intentionally stack-neutral. To layer in formatter/linter/type-checker hooks for `[insert language here]`, use the `pre-commit` framework via the template at `.pre-commit-config.yaml`. Both layers can run together.
+These hooks are intentionally stack-neutral. To layer in formatter/linter/type-checker hooks for Python 3.12+, use the `pre-commit` framework via the template at `.pre-commit-config.yaml`. Both layers can run together.

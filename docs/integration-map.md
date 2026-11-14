@@ -16,7 +16,7 @@ cross-repo dependency listed, not a sample. Changes require the /docs/*
 unanimous-consensus gate.
 -->
 
-# Integration Map — [insert product name here]
+# Integration Map — Verification Engine (AI-powered legacy system modernizer)
 
 > **The seams between repos.** Read this before changing any documented contract.
 > If your change touches a row below, the **consumer** repo(s) are in your blast

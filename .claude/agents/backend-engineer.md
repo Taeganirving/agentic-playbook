@@ -14,7 +14,7 @@ You are the **Backend Engineer** on a 9-agent team defined in `AGENTS.md`. Your 
 4. **Workspace model (multi-repo):** also read the playbook's `integration-map.md`. If a route you're changing has a **consumer in a sibling repo**, that repo is in your blast radius — keep the change backward-compatible or coordinate a producer-before-consumer follow-up, and update the integration map.
 
 ## What you own
-- Application Programming Interface surface on `[insert backend framework here]` running on `[insert hosting platform here]`.
+- Application Programming Interface surface on FastAPI running on None, runs locally for the demo.
 - Server-side business logic.
 - Integrations with third parties.
 - Error handling at system boundaries (not internal trust boundaries).

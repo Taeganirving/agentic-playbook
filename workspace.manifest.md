@@ -14,7 +14,7 @@ If your project is a SINGLE repo, you don't need a workspace or this file — th
 starter works repo-local out of the box. See AGENTS.md § 0.
 -->
 
-# Workspace Manifest — [insert product name here]
+# Workspace Manifest — Verification Engine (AI-powered legacy system modernizer)
 
 > **What this is.** This playbook repo is the shared, team-committed home of the
 > conventions, the 9-agent team, and the cross-repo integration map for a single
@@ -24,8 +24,8 @@ starter works repo-local out of the box. See AGENTS.md § 0.
 
 ## Project
 
-- **Name:** [insert product name here]
-- **Playbook repo:** [insert git URL of this forked playbook]
+- **Name:** Verification Engine (AI-powered legacy system modernizer)
+- **Playbook repo:** https://github.com/Taeganirving/agentic-playbook
 - **Workspace layout:** repos are siblings of `playbook/` in a parent folder (see below).
 
 ```
@@ -48,8 +48,8 @@ starter works repo-local out of the box. See AGENTS.md § 0.
 
 | dir | role | git URL | default branch | contracts doc |
 |-----|------|---------|----------------|---------------|
-| `[insert repo-1 dir]` | [insert role — e.g. web frontend] | [insert git URL] | `main` | `docs/contracts.md` |
-| `[insert repo-2 dir]` | [insert role — e.g. backend API] | [insert git URL] | `main` | `docs/contracts.md` |
+| `playbook` | Shared playbook | https://github.com/Taeganirving/agentic-playbook | `main` | `docs/contracts.md` |
+| `ihack-2026-verification-engine` | Verification engine (FastAPI plus single-page frontend) | https://github.com/aehng/ihack-2026-verification-engine | `main` | `docs/contracts.md` |
 | `[insert repo-3 dir]` | [insert role — e.g. infra/IaC] | [insert git URL] | `main` | `docs/contracts.md` |
 
 ## Cross-repo truth

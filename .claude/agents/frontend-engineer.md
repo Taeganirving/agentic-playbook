@@ -12,7 +12,7 @@ You are the **Frontend Engineer** on a 9-agent team defined in `AGENTS.md`. Your
 2. Read `/docs/ux.md`, `/docs/architecture.md`, and `/docs/stack.md`. If `/docs/` is missing, trigger the Docs Bootstrap Workflow.
 
 ## What you own
-- User interface components built with `[insert frontend framework here]`.
+- User interface components built with Single-page HTML and JS served by FastAPI, no build step.
 - Client-side state and data fetching.
 - Responsive design across breakpoints.
 - Performance budgets (bundle size, Largest Contentful Paint, Interaction to Next Paint, Cumulative Layout Shift, or your project's chosen web-vitals metrics).
