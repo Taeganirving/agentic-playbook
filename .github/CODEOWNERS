@@ -13,31 +13,31 @@
 # Project conventions and process
 /AGENTS.md                      @Taeganirving
 /CLAUDE.md                      @Taeganirving
-/.claude/                       @Taeganirving @Taeganirving
-/.github/                       @Taeganirving @Taeganirving
+/.claude/                       @Taeganirving
+/.github/                       @Taeganirving
 
 # Gate files (starter T-014). A PR build runs the PR's own pipeline YAML, so these files
 # define the check the PR is judged by: changing them needs the people who own the
 # gates. Every line names both owners (last match wins, so no line may drop one).
 # `*` above already requires a default reviewer; this routes gate changes further.
-/azure-pipelines.yml            @Taeganirving @Taeganirving
-/scripts/ci-*.sh                @Taeganirving @Taeganirving
-/scripts/requirements-deck.*    @Taeganirving @Taeganirving
-/.githooks/                     @Taeganirving @Taeganirving
-/.placeholder-allow             @Taeganirving @Taeganirving
-/.gitattributes                 @Taeganirving @Taeganirving
-/.github/CODEOWNERS             @Taeganirving @Taeganirving
+/azure-pipelines.yml            @Taeganirving
+/scripts/ci-*.sh                @Taeganirving
+/scripts/requirements-deck.*    @Taeganirving
+/.githooks/                     @Taeganirving
+/.placeholder-allow             @Taeganirving
+/.gitattributes                 @Taeganirving
+/.github/CODEOWNERS             @Taeganirving
 
 # The upstream starter's own history (starter T-015): its ADRs and reviews sit outside the
 # mechanical /docs consensus gate, so route them to the people who'd own that gate.
-/.starter/                      @Taeganirving @Taeganirving
+/.starter/                      @Taeganirving
 
 # Tasks ledger — DRI sets stay loose, but require any DRI to approve
 /tasks/                         @Taeganirving
 
 # Living docs — unanimous-consensus rule applies; CODEOWNERS adds a human review gate on top
-/docs/                          @Taeganirving @Taeganirving @Taeganirving
-/docs/architecture.md           @Taeganirving @Taeganirving
+/docs/                          @Taeganirving
+/docs/architecture.md           @Taeganirving
 /docs/stack.md                  @Taeganirving
 /docs/data-model.md             @Taeganirving
 /docs/api.md                    @Taeganirving
@@ -45,9 +45,9 @@
 /docs/testing.md                @Taeganirving
 /docs/deployment.md             @Taeganirving
 /docs/runbooks/                 @Taeganirving
-/docs/decisions/                @Taeganirving @Taeganirving
+/docs/decisions/                @Taeganirving
 /docs/ownership.md              @Taeganirving
-/docs/onboarding.md             @Taeganirving @Taeganirving
+/docs/onboarding.md             @Taeganirving
 
 # Code areas (examples — replace with the real layout of your repo)
 # /apps/api/                    @Taeganirving

@@ -54,19 +54,6 @@ repos:
   #   hooks:
   #     - id: mypy
 
-  # # TypeScript / JavaScript — prettier + eslint (via local node_modules)
-  # - repo: local
-  #   hooks:
-  #     - id: prettier
-  #       name: prettier
-  #       entry: pip exec prettier --write
-  #       language: system
-  #       types_or: [javascript, jsx, ts, tsx, json, css, html, markdown]
-  #     - id: eslint
-  #       name: eslint
-  #       entry: pip exec eslint
-  #       language: system
-  #       types_or: [javascript, jsx, ts, tsx]
 
   # # Go — gofmt + go vet
   # - repo: https://github.com/dnephin/pre-commit-golang
