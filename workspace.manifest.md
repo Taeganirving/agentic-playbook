@@ -42,10 +42,6 @@ starter works repo-local out of the box. See AGENTS.md § 0.
 > path (within that repo) to its exhaustive contract inventory. Keep this table exhaustive —
 > an agent uses it to know what else to read before making a cross-repo change.
 
-<!-- A filled row looks like this (delete this comment once you've added real rows):
-| `web` | Next.js frontend | git@github.com:acme/web.git | `main` | `docs/contracts.md` |
--->
-
 | dir | role | git URL | default branch | contracts doc |
 |-----|------|---------|----------------|---------------|
 | `playbook` | Shared playbook | https://github.com/Taeganirving/agentic-playbook | `main` | `docs/contracts.md` |
